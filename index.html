@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kana</title>
+		<link rel = "icon" href = "title_icon.png" type = "image/icon type">
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<script src = "https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<button id = "hiragana_button" class = "active"><span class = "iconify" data-icon="mdi-syllabary-hiragana" data-inline="false"></span> Hiragana</button>
+			<button id = "katakana_button"><span class = "iconify" data-icon="mdi:syllabary-katakana" data-inline="false"></span> Katakana</button>
+		</header>
+		<main>
+			<div id = "kana_div"> <p id = "kana"></p> </div>
+			<div id = "input_div">
+				<button id = "skip_button">Skip</button>
+				<input type = "text" id = "input">
+				<button id = "next_button">Next</button>
+			</div>
+			<div id = "counter">
+				<input type = "number" id = "incorrect" class = "read_only_input" readonly>
+				<input type = "number" id = "correct" class = "read_only_input" readonly>
+			</div>
+			<p id = "correction"></p>
+		</main>
+		<script src = "script.js"></script>
+	</body>
+</html>

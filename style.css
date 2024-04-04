@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: black;
+}
+
+header > button {
+	color: white;
+	background-color: black;
+	padding: 7px 10px;
+	border: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+header > button:hover {
+	color: black; 
+	background-color: #cccccc;
+	cursor: pointer;
+}
+
+body {
+	background-color: #f1f1f1;
+}
+
+#kana_div {
+	display: block;
+	width: 25em;
+	margin: 5em auto 2em;
+	border: 3px solid #cccccc;
+}
+
+#kana {
+	text-align: center;
+	letter-spacing: -30pt;
+	font-size: 140pt;
+	padding-right: .15em;
+	margin: 0 auto;
+	cursor: default;
+	user-select: none;
+}
+
+#input_div, #counter{
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+#counter {
+	margin: 20px auto;
+}
+
+#input {
+	width: 200px;
+	display: block;
+	margin: 0 10px;
+	padding: 3px 7px;
+}
+
+#input:focus {
+	border: 2px solid black;
+	outline: 3px solid #808080;
+}
+
+#input_div > button {
+	display: block;
+	color: white;
+	background-color: black;
+	border: none;
+	font-weight: bold;
+	padding: 3px 10px;
+}
+
+#input_div > button:hover {
+	opacity: 60%;
+	cursor: pointer;
+}
+
+#correct {
+	color: green;
+}
+
+#incorrect {
+	color: red;
+}
+
+#correction {
+	width: 100px;
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	font-size: 19px;
+	margin: 15px auto;
+	display: none;
+}
+
+.read_only_input {
+	background-color: inherit;
+	width: 120px;
+	border: none;
+	opacity: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: default;
+	outline: none;
+	user-select: none;
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+.read_only_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.active {
+	background-color: white;
+	color: black;
+}
